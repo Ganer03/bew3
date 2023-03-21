@@ -41,9 +41,9 @@
     <label>
             Сверхспособности:<br/>
             <select name="field-name-4[]" multiple="multiple">
-                <option>бессмертие</option>
-                <option selected="selected">прохождение сквозь стены</option>
-                <option selected="selected">левитация</option>
+                <option value='бессмертие'>бессмертие</option>
+                <option value='прохождение сквозь стены' selected="selected">прохождение сквозь стены</option>
+                <option value='левитация' selected="selected">левитация</option>
             </select>
         </label><br/>
   <label>
