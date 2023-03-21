@@ -44,17 +44,19 @@ if ($errors) {
 
 $user = 'u52802';
 $pass = '123';
-$db = new PDO('mysql:host=localhost;dbname=u52802', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
+//
+// $db = new PDO('mysql:host=localhost;dbname=u52802', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
 
 // Подготовленный запрос. Не именованные метки.
-try {
-  $stmt = $db->prepare("INSERT INTO application SET name = ?");
-  $stmt -> execute(['fio']);
-}
-catch(PDOException $e){
-  print('Error : ' . $e->getMessage());
-  exit();
-}
+//
+// try {
+//   $stmt = $db->prepare("INSERT INTO application SET name = ?");
+//   $stmt -> execute(['fio']);
+// }
+// catch(PDOException $e){
+//   print('Error : ' . $e->getMessage());
+//   exit();
+// }
 
 //  stmt - это "дескриптор состояния".
  
