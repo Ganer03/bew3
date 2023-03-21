@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <form action="" method="POST">
   <input name="fio" />
   <input enail="email" />
@@ -56,3 +64,5 @@
         </label><br/>
   <input type="submit" value="ok" />
 </form>
+  </body>
+</html>
