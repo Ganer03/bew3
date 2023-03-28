@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Задание 3</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<link rel="stylesheet" href="style.css">
 <form action="/index.php" method="POST">
     <input name="fio" value="Введите ФИО"/>
     <input name="email" value="Введите почту"/>
@@ -63,6 +56,3 @@
         с контрактом ознакомлен (а)
     </label><br/>
     <input type="submit" value="Отправить" />
-</form>
-</body>
-</html>
