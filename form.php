@@ -1,4 +1,3 @@
-<meta charset="UTF-8"/>
 <link rel="stylesheet" href="style.css">
 <form action="/index.php" method="POST">
     <input name="fio" value="Введите ФИО"/>
@@ -57,3 +56,4 @@
         с контрактом ознакомлен (а)
     </label><br/>
     <input type="submit" value="Отправить" />
+</form>
