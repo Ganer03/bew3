@@ -75,7 +75,7 @@ if ($errors) {
 // Сохранение в базу данных.
 
 $user = 'u52802';
-$pass = '123';
+$pass = '7560818';
 //
 $db = new PDO('mysql:host=localhost;dbname=u52802', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
 
