@@ -5,7 +5,7 @@
     <title>Задание 3</title>
 </head>
 <body>
-<form action="/index.php" method="POST">
+<form action="index.php" method="POST">
     <label><input name="fio" value="Введите ФИО"/></label>
     <label><input name="email" value="Введите почту"/></label>
     <label><select name="year"></label>
