@@ -1,15 +1,19 @@
-<link rel="stylesheet" href="style.css">
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Задание 3</title>
+</head>
+<body>
 <form action="/index.php" method="POST">
-    <input name="fio" value="Введите ФИО"/>
-    <input name="email" value="Введите почту"/>
-    <select name="year">
-        <?php
-        for ($i = 1922; $i <= 2022; $i++) {
-            printf('<option value="%d">%d год</option>', $i, $i);
-        }
-        ?>
-    </select>
+    <label><input name="fio" value="Введите ФИО"/></label>
+    <label><input name="email" value="Введите почту"/></label>
+    <label><select name="year"></label>
+    <?php
+    for ($i = 1922; $i <= 2022; $i++) {
+        printf('<option value="%d">%d год</option>', $i, $i);
+    }
+    ?>
     Пол:<br/>
     <label>
         <input type="radio" checked="checked" name="pol" value="M"/>
@@ -56,5 +60,7 @@
         <input type="checkbox" checked="checked" name="check-1"/>
         с контрактом ознакомлен (а)
     </label><br/>
-    <input type="submit" value="Отправить" />
+    <input type="submit" value="Отправить"/>
 </form>
+</body>
+</html>
