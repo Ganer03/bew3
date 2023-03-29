@@ -3,23 +3,25 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Задание 3</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<form action="index.php" method="POST">
+<div class="formss">
+<form action="/index.php" method="POST">
     <label><input name="fio" value="Введите ФИО"/></label>
     <label><input name="email" value="Введите почту"/></label>
-    <label><select name="year"></label>
+    <label><select name="year">
     <?php
     for ($i = 1922; $i <= 2022; $i++) {
         printf('<option value="%d">%d год</option>', $i, $i);
     }
-    ?>
+    ?></select></label>
     Пол:<br/>
     <label>
         <input type="radio" checked="checked" name="pol" value="M"/>
         M
     </label>
-    <label>
+    <label class="pot">
         <input type="radio" name="pol" value="W"/>
         W
     </label>
@@ -62,5 +64,6 @@
     </label><br/>
     <input type="submit" value="Отправить"/>
 </form>
+</div>
 </body>
 </html>
