@@ -22,12 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
 // Проверяем ошибки.
 $errors = FALSE;
-if (empty($_POST['fio'])) {
+if (empty($_POST['fio']) || !preg_match('/^([a-zA-Z\'\-]+\s*|[а-яА-ЯёЁ\'\-]+\s*)$/u', $_POST['name'])) {
     print('Заполните имя.<br/>');
     $errors = TRUE;
 }
 
-if (empty($_POST['email'])) {
+if (empty($_POST['email']) || !preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u', $_POST['email'])) {
     print('Заполните email.<br/>');
     $errors = TRUE;
 }
@@ -42,12 +42,12 @@ if (empty($_POST['limbs']) || !is_numeric($_POST['limbs']) ||($_POST['limbs']<1)
     $errors = TRUE;
 }
 
-if (empty($_POST['pol'])) {
+if (empty($_POST['pol']) || !($_POST['pol']=='M' || $_POST['pol']=='W')) {
     print('Введите пол<br/>');
     $errors = TRUE;
 }
 
-if (empty($_POST['super'])) {
+if (empty($_POST['super']) || !is_array($_POST['super'])) {
     print('Выберите способности.<br/>');
     $errors = TRUE;
 }
